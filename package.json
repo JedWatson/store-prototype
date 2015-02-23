@@ -1,0 +1,25 @@
+{
+  "name": "store-prototype",
+  "version": "1.0.0",
+  "description": "Simple class for creating event-driven Data Stores",
+  "main": "store.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JedWatson/store-prototype.git"
+  },
+  "keywords": [
+    "store",
+    "react",
+    "event",
+    "emitter"
+  ],
+  "author": "Jed Watson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JedWatson/store-prototype/issues"
+  },
+  "homepage": "https://github.com/JedWatson/store-prototype"
+}
