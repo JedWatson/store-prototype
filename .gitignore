@@ -1,0 +1,12 @@
+# Logs
+logs
+*.log
+
+# Dependency directory
+node_modules
+
+# Users Environment Variables
+.lock-wscript
+
+# Mac OS X DS_Store
+.DS_Store
