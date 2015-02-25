@@ -1,5 +1,3 @@
-var extend = require('./extend');
-
 var Store = function() {
 	var _changeListeners = [];
 	this.notifyChange = function() {
