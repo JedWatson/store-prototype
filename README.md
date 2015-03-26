@@ -5,6 +5,8 @@ Simple class for creating event-driven Data Stores.
 
 Install from npm with `npm install --save store-prototype` and use as per the example below.
 
+See [this gist](https://gist.github.com/JedWatson/18eb2582f5d957053a1d) for a more complete usage example.
+
 ## Example:
 
 ```
