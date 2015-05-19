@@ -38,3 +38,15 @@ MyStore.addChangeListener(function() {
 });
 
 ```
+
+## Named changes
+
+You can provide a key to `addChangeListener` and `notifyChange` to get a little bit more granular control over when change listeners are called.
+
+```
+MyStore.addChangeListener('key', function() {
+	console.log('things changed because key!');
+});
+MyStore.notifyChange(); // ...
+MyStore.notifyChangekey; // things changed because key!
+```
