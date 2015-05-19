@@ -1,6 +1,6 @@
 {
   "name": "store-prototype",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Simple class for creating event-driven Data Stores",
   "main": "store.js",
   "scripts": {
@@ -17,6 +17,7 @@
   "keywords": [
     "store",
     "react",
+    "react-component",
     "event",
     "emitter"
   ],
