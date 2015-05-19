@@ -29,7 +29,7 @@ describe('Store', function() {
 			s.addChangeListener(l);
 			s.notifyChange();
 			called.must.be(1);
-			s.notifyChange();
+			s.notifyChange('name');
 			called.must.be(2);
 		});
 		it('should not fire after being removed', function() {
