@@ -46,4 +46,22 @@ describe('Store', function() {
 			called2.must.be(true);
 		});
 	});
+	describe('named listeners', function() {
+		it('should fire on notifyChange(name)', function() {
+			var s = new Store();
+			var called = false;
+			function l() { called = true; }
+			s.addChangeListener('test', l);
+			s.notifyChange('test');
+			called.must.be(true);
+		});
+		it('should not fire on notifyChange()', function() {
+			var s = new Store();
+			var called = false;
+			function l() { called = true; }
+			s.addChangeListener('test', l);
+			s.notifyChange();
+			called.must.be(false);
+		});
+	});
 });
