@@ -16,21 +16,21 @@ var MyStore = new Store();
 var _things = {};
 
 MyStore.extend({
-	
+
 	getThing: function(key) {
 		return _things[key];
 	},
-	
+
 	addThing: function(key, data) {
 		_things[key] = data;
 		this.notifyChange();
 	},
-	
+
 	removeThing: function(key) {
 		delete _things[key];
 		this.notifyChange();
 	}
-	
+
 });
 
 MyStore.addChangeListener(function() {
@@ -48,5 +48,5 @@ MyStore.addChangeListener('key', function() {
 	console.log('things changed because key!');
 });
 MyStore.notifyChange(); // ...
-MyStore.notifyChangekey; // things changed because key!
+MyStore.notifyChange('key'); // things changed because key!
 ```
